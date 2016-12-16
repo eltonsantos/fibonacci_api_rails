@@ -2,15 +2,11 @@ class Fibonacci
   
   # Return the sequence Fibonacci and the sum elements
   def self.calculate_fibonacci(n)
-    if n == 1
-      1
-    elsif n == 2
-      1
+    if n <= 1
+      n
     else
-      # Sequence
-      sequence = (1..n).map { |x| calculate_fibonacci(x) }
+      calculate_fibonacci( n - 1 ) + calculate_fibonacci( n - 2 )
     end
-
   end
 
 end
