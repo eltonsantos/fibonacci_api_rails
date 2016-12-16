@@ -8,7 +8,7 @@ html
         padding: 1.25rem; /* 20 */
       }
 
-      .newsletter
+      .form-quantity
       {
         width: 100%;
         max-width: 26.25rem; /* 420 */
@@ -19,7 +19,7 @@ html
         left: 50%;
         margin: -1.875rem 0 0 -13.125rem; /* 30 210 */
       }
-        .newsletter input
+        .form-quantity input
         {
           -webkit-transition: color .25s ease, background-color .25s ease, border-color .25s ease;
           -moz-transition: color .25s ease, background-color .25s ease, border-color .25s ease;
@@ -27,7 +27,7 @@ html
           -o-transition: color .25s ease, background-color .25s ease, border-color .25s ease;
           transition: color .25s ease, background-color .25s ease, border-color .25s ease;
         }
-        .newsletter-email
+        .quantity
         {
           width: 100%;
           height: 100%;
@@ -44,23 +44,23 @@ html
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis;
         }
-          .newsletter-email::-webkit-input-placeholder  { color: #a49c54 !important; }
-          .newsletter-email:-moz-placeholder        { color: #a49c54 !important; }
-          .newsletter-email::-moz-placeholder       { color: #a49c54 !important; }
-          .newsletter-email:-ms-input-placeholder     { color: #a49c54 !important; }
+          .quantity::-webkit-input-placeholder  { color: #a49c54 !important; }
+          .quantity:-moz-placeholder        { color: #a49c54 !important; }
+          .quantity::-moz-placeholder       { color: #a49c54 !important; }
+          .quantity:-ms-input-placeholder     { color: #a49c54 !important; }
 
-          .newsletter-email:hover
+          .quantity:hover
           {
             border-color: #494736;
           }
-          .newsletter-email:focus
+          .quantity:focus
           {
             color: #494736;
             background-color: transparent;
             border-color: #494736;
           }
 
-        .newsletter-submit
+        .form-submit
         {
           height: 100%;
           font-weight: 700;
@@ -82,14 +82,25 @@ html
           -o-transform-origin: right center;
           transform-origin: right center;
         }
-          .newsletter-submit:hover,
-          .newsletter-submit:focus
+          .form-submit:hover,
+          .form-submit:focus
           {
             color: #fff;
           }
-          .newsletter--active .newsletter-submit
+          .form-quantity--active .form-submit
           {
             display: block;
+          }
+          .result p {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          .loading {
+            background: url("../img/loader.gif");
+            height: 32px;
+            width: 32px;
+            margin: 0 auto;
+            display: none
           }
 
     @-webkit-keyframes appear-from-inside
@@ -119,7 +130,7 @@ html
 
     @media screen and ( max-width: 30em ) /* 480 */
     {
-      .newsletter
+      .form-quantity
       {
         position: relative;
         top: auto;

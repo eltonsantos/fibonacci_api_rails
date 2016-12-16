@@ -8,19 +8,24 @@
 </head>
 <body>
 
-  <div style="width:700px;margin:50px auto;">
+  <div style="width:700px; margin:50px auto;">
 
-    <form class="newsletter" autocomplete="off" novalidate>
-      <input type="email" value="" placeholder="Enter a number for calculate fibonacci" tabindex="1" class="newsletter-email" name="quantity" />
-      <input type="button" value="OK" tabindex="2" class="newsletter-submit" />
+    <form action="/fibonacci" class="form-quantity" autocomplete="off" method="post" novalidate>
+      <input type="text" value="" placeholder="Enter a number for calculate fibonacci" tabindex="1" class="quantity" name="quantity" />
+      <input type="button" value="OK" tabindex="2" class="form-submit" />
     </form>
   
-    <div style="margin-top:100px;text-align:center;">
-      <p>Result:</p>
+    <div style="margin-top:100px; text-align:center;" class="result">
+      <p>Sequence: </p>
+      <hr />
+      <div class="sequence"></div>
+      <div class="loading"></div>
     </div>
 
-    
   </div>
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 
 </body>
 </html>
