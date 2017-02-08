@@ -1,24 +1,31 @@
-# README
+# Fibonacci API Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API that consumes a JSON and calculates the Fibonacci number. The calculation is shown in a simple layout with an input field, a button, and a block for output.
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+- Ruby 2.3.0 version
+- Rails 5.0.0 version
 
-* System dependencies
+## Installation
 
-* Configuration
+On terminal:
 
-* Database creation
+1. `git clone git@github.com:eltonsantos/fibonacci_api_rails`.
+2. `cd fibonacci_api_rails`.
+3. `bundle install`.
+4. run `rails s`.
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+1. In your browser access `localhost:3000`.
+2. Enter a number.
+3. Wait calculate and finish.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+Bug reports and pull requests are welcome on GitHub at https://github.com/eltonsantos/fibonacci_api_rails.
 
-* ...
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
